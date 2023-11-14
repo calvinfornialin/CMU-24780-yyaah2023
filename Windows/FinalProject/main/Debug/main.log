@@ -1,0 +1,7 @@
+﻿  Character.cpp
+  Projectile.cpp
+C:\Users\Aaron\Documents\GitHub\CMU-24780-yyaah2023\Windows\FinalProject\main\Projectile.cpp(40,17): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Aaron\Documents\GitHub\CMU-24780-yyaah2023\Windows\FinalProject\main\Projectile.cpp(41,17): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  main.cpp
+  Generating Code...
+  main.vcxproj -> C:\Users\Aaron\Documents\GitHub\CMU-24780-yyaah2023\Windows\FinalProject\Debug\main.exe
