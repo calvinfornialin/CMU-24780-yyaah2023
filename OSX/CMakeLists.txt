@@ -3,4 +3,6 @@ project(FinalProject)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(CMU-24780-yyah2023 main.cpp)
+add_executable(CMU-24780-yyah2023 main.cpp
+        Character.cpp
+        Character.h)

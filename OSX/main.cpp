@@ -1,55 +1,36 @@
-// main.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
-#include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#include <math.h>
 #include "fssimplewindow.h"
-#include "ysglfontdata.h"
-#include "Projectile.h"
+#include "Character.h"
 
-int wWidth = 800;
-int wHeight = 600;
+int main(void) {
+    FsOpenWindow(16, 16, 800, 600, 1);
+    FsPollDevice();
 
-int main()
-{   
-    srand((int)time(nullptr));
-    FsOpenWindow(0, 0, wWidth, wHeight, 1);
-    FsPassedTime();
-    Projectile test;
+    Character player(400);
 
-
-    while (1)
-    {
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-        
+    while (1) {
         FsPollDevice();
-        auto ms = FsPassedTime();
-        double dt = (double)ms / 1000.0;
+        int key = FsInkey();
 
-        auto key = FsInkey();
-        if (FSKEY_ESC == key)
-        {
-            break;
+        switch (key) {
+            case FSKEY_LEFT:
+                player.MoveLeft();
+                break;
+            case FSKEY_RIGHT:
+                player.MoveRight();
+                break;
+            case FSKEY_UP:
+                player.Jump();
+                break;
+            case FSKEY_ESC:
+                return 0;
         }
 
-        //test fire projectile
-        if (test.isActive() == false)
-        {
-            test.fireProjectile(300, 300, 100, 100);
-        }
+        glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
 
-        test.moveProjectile(dt, wWidth, wHeight, 400, 300);
-
-        test.Collision(wWidth, wHeight);
-
-        test.Draw(247, 147, 30);
+        player.Update();
+        player.Draw();
 
         FsSwapBuffers();
-        FsSleep(5);
+        FsSleep(20);
     }
-    return 0;
 }
-
