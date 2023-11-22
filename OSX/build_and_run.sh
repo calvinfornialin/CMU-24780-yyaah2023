@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# remove the previous executable
+rm -r test.app
+
+# create a new folder for executable
+mkdir -p test.app/Contents/MacOS
+
 # compile frameworks
 clang -c fssimplewindowobjc.m
 clang -c yssimplesound_macosx_objc.m
