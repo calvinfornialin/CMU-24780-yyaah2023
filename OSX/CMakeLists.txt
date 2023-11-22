@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 # Source files
 set(SOURCES 
 main.cpp
+png.cpp
 Character.cpp
 Projectile.cpp
 Stage.cpp
@@ -26,6 +27,8 @@ fssimplewindow.h
 ysglfontdata.h
 yspng.h
 yssimplesound.h
+parameters.h
+png.h
 )
 
 # Add an executable target

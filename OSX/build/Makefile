@@ -249,6 +249,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+png.o: png.cpp.o
+.PHONY : png.o
+
+# target to build an object file
+png.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/png.cpp.o
+.PHONY : png.cpp.o
+
+png.i: png.cpp.i
+.PHONY : png.i
+
+# target to preprocess a source file
+png.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/png.cpp.i
+.PHONY : png.cpp.i
+
+png.s: png.cpp.s
+.PHONY : png.s
+
+# target to generate assembly for a file
+png.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/png.cpp.s
+.PHONY : png.cpp.s
+
 ysglfontdata.o: ysglfontdata.c.o
 .PHONY : ysglfontdata.o
 
@@ -345,6 +369,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... png.o"
+	@echo "... png.i"
+	@echo "... png.s"
 	@echo "... ysglfontdata.o"
 	@echo "... ysglfontdata.i"
 	@echo "... ysglfontdata.s"

@@ -1,12 +1,18 @@
 #include "fssimplewindow.h"
 #include "Character.h"
+#include "Stage.h"
+#include "yspng.h"
+#include "png.h"
+#include "parameters.h"
 
 int main(void) {
-    FsOpenWindow(16, 16, 800, 600, 1);
+	FsChangeToProgramDir();
+    FsOpenWindow(16, 16, WINDOW_WID, WINDOW_HEI, 1);
     FsPollDevice();
 
+    initPng();
     Character player(400);
-
+    Stage stage1;
     while (1) {
         FsPollDevice();
         int key = FsInkey();
@@ -27,6 +33,7 @@ int main(void) {
 
         glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
 
+        stage1.Draw();
         player.Update();
         player.Draw();
 

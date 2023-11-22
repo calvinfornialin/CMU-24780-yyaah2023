@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/exe.dir/fssimplewindowcpp.cpp.o.d"
   "CMakeFiles/exe.dir/main.cpp.o"
   "CMakeFiles/exe.dir/main.cpp.o.d"
+  "CMakeFiles/exe.dir/png.cpp.o"
+  "CMakeFiles/exe.dir/png.cpp.o.d"
   "CMakeFiles/exe.dir/ysglfontdata.c.o"
   "CMakeFiles/exe.dir/ysglfontdata.c.o.d"
   "CMakeFiles/exe.dir/yspng.cpp.o"
