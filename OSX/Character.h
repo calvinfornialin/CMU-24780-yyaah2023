@@ -5,6 +5,11 @@
 #include "Stage.h"
 
 
+enum Direction{
+    right,
+    left
+};
+
 class Character {
 
 protected:
@@ -13,6 +18,8 @@ protected:
     int y;
     int vx;
     int vy;
+
+    static Direction direction;
     static int maxMultiJump;
     static int multiJumpCnt;
     static const int CharacterWidth;

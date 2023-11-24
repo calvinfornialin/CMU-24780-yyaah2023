@@ -10,11 +10,12 @@
 const int Character::CharacterWidth = 64;
 const int Character::CharacterHeight = 64;
 const int Character::CharacterSpeed = 15;
-const int Character::JumpSpeed = 15;
+const int Character::JumpSpeed = 20;
 const int Character::Gravity = 1;
 const int Character::GroundHeight = (WINDOW_HEI-64-1);
 int Character::maxMultiJump = 2;
 int Character::multiJumpCnt = maxMultiJump;
+Direction Character::direction = right;
 
 Character::Character(int initialX)
         : x(initialX), y(GroundHeight), vx(0), vy(0){
@@ -31,14 +32,21 @@ int Character::getY(){
 void Character::Draw() const {
     int winWid,winHei;
     FsGetWindowSize(winWid,winHei);
-    DrawPng((double)x, (double)y, enum_character);
+    if(direction == right){
+        DrawPng((double)x, (double)y, enum_character_right);
+    }
+    else if(direction == left){
+        DrawPng((double)x, (double)y, enum_character_left);
+    }
 }
 
 void Character::MoveLeft() {
+    direction = left;
     vx = -CharacterSpeed;
 }
 
 void Character::MoveRight() {
+    direction = right;
     vx = CharacterSpeed;
 }
 
