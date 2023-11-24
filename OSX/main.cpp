@@ -28,7 +28,7 @@ int main(void) {
                 player.MoveRight();
                 break;
             case FSKEY_SPACE:
-                player.Jump();
+                player.Jump(stage1);
                 break;
             case FSKEY_ESC:
                 return 0;
@@ -46,7 +46,7 @@ int main(void) {
         stage1.Draw();
         player.applyGravity();
         player.adaptVelocity(stage1);
-        player.Update();
+        player.Update(stage1);
         player.Draw();
 
         FsSwapBuffers();

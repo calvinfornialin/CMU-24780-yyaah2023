@@ -13,9 +13,11 @@ const int Character::CharacterSpeed = 15;
 const int Character::JumpSpeed = 15;
 const int Character::Gravity = 1;
 const int Character::GroundHeight = (WINDOW_HEI-64-1);
+int Character::maxMultiJump = 2;
+int Character::multiJumpCnt = maxMultiJump;
 
 Character::Character(int initialX)
-        : x(initialX), y(GroundHeight), vx(0), vy(0), isJumping(false) {
+        : x(initialX), y(GroundHeight), vx(0), vy(0){
 }
 
 int Character::getX(){
@@ -40,11 +42,10 @@ void Character::MoveRight() {
     vx = CharacterSpeed;
 }
 
-void Character::Jump() {
-    printf("vx when jump %d\n", vx);
-    if (!isJumping) {
+void Character::Jump(Stage& stage) {
+    if (Character::isOnTheGround(stage) || multiJumpCnt) {
+        multiJumpCnt -= 1;
         vy = -JumpSpeed;
-        isJumping = true;
     }
 }
 
@@ -52,13 +53,29 @@ void Character::applyGravity() {
     vy += Gravity;
 }
 
-void Character::Update() {
+bool Character::isOnTheGround(Stage& stage){
+    int left_edge = x;
+    int right_edge = x+CharacterWidth-1;
+    int top_edge = y-(CharacterHeight-1);
+    int bottom_edge = y;
+
+    int stepped_pixel = bottom_edge+1;
+    for(int j=left_edge/64; j<=right_edge/64; j++){
+        if(stage.map[(WINDOW_HEI_BLOCK-1) - stepped_pixel/64][j] != 'a'){
+            // std::cout << "On the Ground\n";
+            return true;
+        }
+    }
+    // std::cout << "In the Air\n";
+    return false;
+}
+
+void Character::Update(Stage& stage) {
     x += vx;
     vx = 0;
     y += vy;
-
-    if(vy == 0){
-        isJumping = false;
+    if(Character::isOnTheGround(stage)){
+        multiJumpCnt = maxMultiJump;
     }
 }
 
@@ -127,6 +144,7 @@ int Character::adaptVelocity(Stage& stage){
             }
         }
     }
+
     vx = adapted_vx;
     vy = adapted_vy;
     // std::cout << "adapted_vy: " << vy <<std::endl;

@@ -6,13 +6,15 @@
 
 
 class Character {
+
 protected:
 
     int x;
     int y;
     int vx;
     int vy;
-    bool isJumping;
+    static int maxMultiJump;
+    static int multiJumpCnt;
     static const int CharacterWidth;
     static const int CharacterHeight;
     static const int CharacterSpeed;
@@ -29,9 +31,9 @@ public:
 
     void MoveRight();
 
-    void Jump();
+    void Jump(Stage& stage);
 
-    void Update();
+    void Update(Stage& stage);
 
     int adaptVelocity(Stage& stage);
 
@@ -40,7 +42,10 @@ public:
     int getX(void);
 
     int getY(void);
+
     void applyGravity(void);
+
+    bool isOnTheGround(Stage& stage);
 };
 
 #endif
