@@ -4,6 +4,9 @@
 #include "yspng.h"
 #include "png.h"
 #include "parameters.h"
+#include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
 
 int main(void) {
 	FsChangeToProgramDir();
@@ -24,16 +27,25 @@ int main(void) {
             case FSKEY_RIGHT:
                 player.MoveRight();
                 break;
-            case FSKEY_UP:
+            case FSKEY_SPACE:
                 player.Jump();
                 break;
             case FSKEY_ESC:
                 return 0;
+                break;
+            case FSKEY_P:
+                std::cout << "Current Position " << "x: " << player.getX() << " y: " << player.getY() << std::endl;
+                break;
+            default:
+                // std::cout << "Current Position " << "x: " << player.getX() << "y: " << player.getY();
+                break;
         }
 
         glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
 
         stage1.Draw();
+        player.applyGravity();
+        player.adaptVelocity(stage1);
         player.Update();
         player.Draw();
 

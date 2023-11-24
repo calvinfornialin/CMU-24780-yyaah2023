@@ -2,15 +2,17 @@
 #ifndef Character_H
 #define Character_H
 
+#include "Stage.h"
+
 
 class Character {
 protected:
+
     int x;
     int y;
     int vx;
     int vy;
     bool isJumping;
-
     static const int CharacterWidth;
     static const int CharacterHeight;
     static const int CharacterSpeed;
@@ -30,6 +32,15 @@ public:
     void Jump();
 
     void Update();
+
+    int adaptVelocity(Stage& stage);
+
+    bool chkPosValid(Stage& stage, int left_edge, int right_edge, int top_edge, int bottom_edge);
+
+    int getX(void);
+
+    int getY(void);
+    void applyGravity(void);
 };
 
 #endif

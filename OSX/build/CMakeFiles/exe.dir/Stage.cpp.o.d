@@ -56,6 +56,7 @@ CMakeFiles/exe.dir/Stage.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/os/availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h \
+  /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/parameters.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__verbose_abort \
@@ -819,5 +820,5 @@ CMakeFiles/exe.dir/Stage.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/u8path.h \
-  /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/parameters.h \
-  /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/png.h
+  /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/png.h \
+  /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/character.h

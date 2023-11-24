@@ -24,7 +24,7 @@ int initPng(void){
 
 void DrawPng(double x, double y, pngFile file)
 {
-    glRasterPos2d(x,y);
+    glRasterPos2d(x,y-1);
 	switch(file){
 		case enum_grass:
 			glDrawPixels(grass.wid,grass.hei,GL_RGBA,GL_UNSIGNED_BYTE,grass.rgba);

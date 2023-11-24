@@ -5,6 +5,7 @@
 #include "fssimplewindow.h"
 #include "parameters.h"
 #include "png.h"
+#include "character.h"
 
 // int InitMap(void){
 //     // load map here
@@ -69,25 +70,12 @@
 // }
 // void Draw(void);
 // void PlayStageSoundEffect(void);
-char map[WINDOW_HEI/64][WINDOW_WID/64] = {
-    {'g', 'g', 'g', 'g', 'g', 'g', 'g', 'g', 'g', 'g', 'g', 'g', 'g', 'g', 'g', 'g'},
-    {'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a'},
-    {'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a'},
-    {'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'g', 'g', 'g', 'g', 'g', 'g', 'a', 'a'},
-    {'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a'},
-    {'a', 'a', 'a', 'g', 'g', 'g', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a'},
-    {'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a'},
-    {'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a'},
-    {'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a'},
-    {'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'g', 'g', 'a', 'a', 'a', 'g', 'g', 'g'},
-    {'a', 'g', 'g', 'g', 'g', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a'},
-    {'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a'}
-};
+
 void Stage::Draw(void){
     for(int i=0; i<WINDOW_HEI/64; i++){
         for(int j=0; j<WINDOW_WID/64; j++){
             if(map[i][j]=='g'){
-                DrawPng((double)(j*64),(double)(WINDOW_HEI-i*64)-1, enum_grass);
+                DrawPng((double)(j*64),(double)(WINDOW_HEI-i*64), enum_grass);
             }
         }
     }

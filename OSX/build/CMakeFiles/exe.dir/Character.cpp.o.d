@@ -42,6 +42,8 @@ CMakeFiles/exe.dir/Character.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_off_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_ssize_t.h \
   /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Character.h \
+  /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Stage.h \
+  /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/yspng.h \
   /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/fssimplewindow.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
@@ -60,8 +62,6 @@ CMakeFiles/exe.dir/Character.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/os/availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h \
   /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/parameters.h \
-  /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/png.h \
-  /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/yspng.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/version \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/ios \
@@ -801,4 +801,5 @@ CMakeFiles/exe.dir/Character.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cstdarg
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cstdarg \
+  /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/png.h
