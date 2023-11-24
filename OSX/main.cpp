@@ -36,6 +36,9 @@ int main(void) {
             case FSKEY_P:
                 std::cout << "Current Position " << "x: " << player.getX() << " y: " << player.getY() << std::endl;
                 break;
+            case FSKEY_V:
+                player.currentPosValid(stage1);
+                break;
             default:
                 // std::cout << "Current Position " << "x: " << player.getX() << "y: " << player.getY();
                 break;

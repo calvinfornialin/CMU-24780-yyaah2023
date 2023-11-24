@@ -87,6 +87,26 @@ void Character::Update(Stage& stage) {
     }
 }
 
+bool Character::currentPosValid(Stage& stage){
+    int left_edge = x;
+    int right_edge = x+CharacterWidth-1;
+    int top_edge = y-(CharacterHeight-1);
+    int bottom_edge = y;
+    std::cout<<"top_edge: "<< top_edge << " bottom_edge: " << bottom_edge <<std::endl;
+    std::cout<<"left_edge: "<< left_edge << " right_edge: " << right_edge <<std::endl;
+    for(int i=((WINDOW_HEI_BLOCK-1) - bottom_edge/64); i<=((WINDOW_HEI_BLOCK-1) - top_edge/64); i++){
+        for(int j=left_edge/64; j<=right_edge/64; j++){
+            // std::cout<<"i: "<< i << " j: " << j <<std::endl;
+            if(stage.map[i][j] != 'a'){
+                std::cout<< "FAILED" <<std::endl;
+                return false;
+            }
+        }
+    }
+    std::cout<< "OK" <<std::endl;
+    return true;
+}
+
 bool Character::chkPosValid(Stage& stage, int left_edge, int right_edge, int top_edge, int bottom_edge){
     // std::cout<<"top_edge: "<< top_edge << " bottom_edge: " << bottom_edge <<std::endl;
     // std::cout<<"left_edge: "<< left_edge << " right_edge: " << right_edge <<std::endl;
@@ -104,7 +124,6 @@ bool Character::chkPosValid(Stage& stage, int left_edge, int right_edge, int top
 }
 
 int Character::adaptVelocity(Stage& stage){
-    // std::cout << "vy: " << vy << std::endl;
     int left_edge = x;
     int right_edge = x+CharacterWidth-1;
     int top_edge = y-(CharacterHeight-1);
@@ -153,8 +172,13 @@ int Character::adaptVelocity(Stage& stage){
         }
     }
 
-    vx = adapted_vx;
-    vy = adapted_vy;
-    // std::cout << "adapted_vy: " << vy <<std::endl;
+    if(Character::chkPosValid(stage, left_edge+adapted_vx, right_edge+adapted_vx, top_edge+adapted_vy, bottom_edge+adapted_vy) == true){
+        vx = adapted_vx;
+        vy = adapted_vy;
+    }
+    else{
+        vx = 0;
+        vy = adapted_vy;
+    }
     return 0;
 }

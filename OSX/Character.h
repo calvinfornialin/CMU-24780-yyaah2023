@@ -53,6 +53,8 @@ public:
     void applyGravity(void);
 
     bool isOnTheGround(Stage& stage);
+
+    bool currentPosValid(Stage& stage);
 };
 
 #endif
