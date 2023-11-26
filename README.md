@@ -3,4 +3,5 @@
 
 ### Compile and run on Mac using CMake
 $> cd OSX
+
 $> ./build_and_run.sh
