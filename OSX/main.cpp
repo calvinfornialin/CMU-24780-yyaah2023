@@ -20,16 +20,34 @@ int main(void) {
         FsPollDevice();
         int key = FsInkey();
 
+        int keyUp = FsGetKeyState(FSKEY_W);
+        int keyLeft = FsGetKeyState(FSKEY_A);
+        int keyRight = FsGetKeyState(FSKEY_D);
+
+        if (keyUp && keyLeft) {
+            player.MoveLeft();
+            player.Jump(stage1);
+        } else if (keyUp && keyRight) {
+            player.MoveRight();
+            player.Jump(stage1);
+        } else if (keyUp) {
+            player.Jump(stage1);
+        } else if (keyLeft) {
+            player.MoveLeft();
+        } else if (keyRight) {
+            player.MoveRight();
+        }
+
         switch (key) {
-            case FSKEY_LEFT:
-                player.MoveLeft();
-                break;
-            case FSKEY_RIGHT:
-                player.MoveRight();
-                break;
-            case FSKEY_SPACE:
-                player.Jump(stage1);
-                break;
+//            case FSKEY_A:
+//                player.MoveLeft();
+//                break;
+//            case FSKEY_D:
+//                player.MoveRight();
+//                break;
+//            case FSKEY_W:
+//                player.Jump(stage1);
+//                break;
             case FSKEY_ESC:
                 return 0;
                 break;
