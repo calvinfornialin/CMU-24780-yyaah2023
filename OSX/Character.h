@@ -42,6 +42,8 @@ public:
 
     void Update(Stage& stage);
 
+    void Stop();
+
     int adaptVelocity(Stage& stage);
 
     bool chkPosValid(Stage& stage, int left_edge, int right_edge, int top_edge, int bottom_edge);

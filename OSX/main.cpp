@@ -36,21 +36,13 @@ int main(void) {
             player.MoveLeft();
         } else if (keyRight) {
             player.MoveRight();
+        } else {
+            player.Stop();
         }
 
         switch (key) {
-//            case FSKEY_A:
-//                player.MoveLeft();
-//                break;
-//            case FSKEY_D:
-//                player.MoveRight();
-//                break;
-//            case FSKEY_W:
-//                player.Jump(stage1);
-//                break;
             case FSKEY_ESC:
                 return 0;
-                break;
             case FSKEY_P:
                 std::cout << "Current Position " << "x: " << player.getX() << " y: " << player.getY() << std::endl;
                 break;

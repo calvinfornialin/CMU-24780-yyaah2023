@@ -71,11 +71,19 @@
 // void Draw(void);
 // void PlayStageSoundEffect(void);
 
-void Stage::Draw(void){
-    for(int i=0; i<WINDOW_HEI/64; i++){
-        for(int j=0; j<WINDOW_WID/64; j++){
-            if(map[i][j]=='g'){
-                DrawPng((double)(j*64),(double)(WINDOW_HEI-i*64), enum_grass);
+void Stage::Draw(void) {
+    glColor3ub(180, 176, 163);
+    for (int i = 0; i < WINDOW_HEI / 64; i++) {
+        for (int j = 0; j < WINDOW_WID / 64; j++) {
+            if (map[i][j] == 'g') {
+                DrawPng((double) (j * 64), (double) (WINDOW_HEI - i * 64), enum_grass);
+            } else if (map[i][j] == 'a') {
+                glBegin(GL_QUADS);
+                glVertex2i(j * 64, WINDOW_HEI - i * 64);
+                glVertex2i((j + 1) * 64, WINDOW_HEI - i * 64);
+                glVertex2i((j + 1) * 64, WINDOW_HEI - (i + 1) * 64);
+                glVertex2i(j * 64, WINDOW_HEI - (i + 1) * 64);
+                glEnd();
             }
         }
     }
