@@ -2,7 +2,7 @@
 #include "png.h"
 #include "Character.h"
 
-Hero::Hero(int initialX, int speed) : Character(initialX, speed) {
+Hero::Hero(int initialX, int speed) : Character(initialX, GroundHeight, speed) {
     runningRight.push_back(running_right_1);
     runningRight.push_back(running_right_2);
     runningRight.push_back(running_right_3);

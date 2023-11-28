@@ -33,7 +33,6 @@ private:
     int numRunningFrames = 6;
     std::vector<pngFile> runningRight;
     std::vector<pngFile> runningLeft;
-
 };
 
 #endif

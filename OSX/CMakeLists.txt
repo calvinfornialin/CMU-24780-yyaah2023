@@ -17,6 +17,7 @@ fssimplewindowobjc.o
 yssimplesound.cpp
 yssimplesound_macosx_objc.o
 Hero.cpp
+Robot.cpp
 )
 
 # Header files
@@ -31,6 +32,7 @@ yssimplesound.h
 parameters.h
 png.h
 Hero.h
+Robot.h
 )
 
 # Add an executable target

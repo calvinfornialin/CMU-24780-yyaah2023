@@ -3,8 +3,8 @@
 #include "Stage.h"
 #include <iostream>
 
-Character::Character(int initialX, int speed)
-        : x(initialX), y(GroundHeight), vx(0), vy(0), direction(Direction::right), CharacterSpeed(speed) {
+Character::Character(int initialX, int initialY, int speed)
+        : x(initialX), y(initialY), vx(0), vy(0), direction(Direction::right), CharacterSpeed(speed) {
 }
 
 int Character::getX() const {

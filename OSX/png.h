@@ -22,6 +22,8 @@ enum pngFile{
     running_left_4,
     running_left_5,
     running_left_6,
+    robot_left,
+    robot_right
 
 };
 

@@ -26,7 +26,7 @@ protected:
     static const int GroundHeight = (WINDOW_HEI - 64 - 1);
 
 public:
-    Character(int initialX, int speed);
+    Character(int initialX, int initialY, int speed);
 
     virtual void Draw() const = 0;
 

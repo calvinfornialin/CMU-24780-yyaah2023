@@ -18,6 +18,8 @@ YsRawPngDecoder left_3;
 YsRawPngDecoder left_4;
 YsRawPngDecoder left_5;
 YsRawPngDecoder left_6;
+YsRawPngDecoder rbt_left;
+YsRawPngDecoder rbt_right;
 
 int initPng(void) {
     if (YSOK != grass.Decode("png/grass.png")) {
@@ -112,6 +114,19 @@ int initPng(void) {
     }
     left_6.Flip();
 
+    // robot
+    if (YSOK != rbt_left.Decode("png/robot_left.png")) {
+        std::cout << "PNG load error." << std::endl;
+        return 1;
+    }
+    rbt_left.Flip();
+
+    if (YSOK != rbt_right.Decode("png/robot_right.png")) {
+        std::cout << "PNG load error." << std::endl;
+        return 1;
+    }
+    rbt_right.Flip();
+
     return 0;
 }
 
@@ -162,6 +177,12 @@ void DrawPng(double x, double y, pngFile file) {
             break;
         case running_left_6:
             glDrawPixels(left_6.wid, left_6.hei, GL_RGBA, GL_UNSIGNED_BYTE, left_6.rgba);
+            break;
+        case robot_left:
+            glDrawPixels(rbt_left.wid, rbt_left.hei, GL_RGBA, GL_UNSIGNED_BYTE, rbt_left.rgba);
+            break;
+        case robot_right:
+            glDrawPixels(rbt_right.wid, rbt_right.hei, GL_RGBA, GL_UNSIGNED_BYTE, rbt_right.rgba);
             break;
         default:
             break;
