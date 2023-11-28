@@ -37,6 +37,8 @@ public:
     virtual void MoveRight() = 0;
 
     virtual void Update(Stage &stage, double dt) = 0;
+    
+    virtual void projectileCollision() = 0;
 
     int adaptVelocity(Stage &stage);
 

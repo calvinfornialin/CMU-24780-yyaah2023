@@ -20,7 +20,7 @@ public:
 
     bool OnTheGround(Stage &stage, int x_pos, int y_pos);
 
-    void projectileCollision();
+    void projectileCollision() override;
 
 private:
     Direction direction = Direction::right;

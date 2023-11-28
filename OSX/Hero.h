@@ -22,7 +22,7 @@ public:
 
     void Jump(Stage &stage);
 
-    void projectileCollision();
+    void projectileCollision() override;
 
 private:
     int JumpSpeed = 20;

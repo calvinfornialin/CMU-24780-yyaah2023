@@ -74,22 +74,27 @@ int main(void) {
         player.adaptVelocity(stage1);
         player.Update(stage1, dt);
         player.Draw();
+        player.projectileCollision();
+    
 
 //        std::cout << "Current Position " << "x: " << r1.getX() << "y: " << r1.getY() << "\n";
         r1.Update(stage1, dt);
         r1.applyGravity();
         r1.adaptVelocity(stage1);
         r1.Draw();
+        r1.projectileCollision();
 
         r2.Update(stage1, dt);
         r2.applyGravity();
         r2.adaptVelocity(stage1);
         r2.Draw();
+        r2.projectileCollision();
 
         r3.Update(stage1, dt);
         r3.applyGravity();
         r3.adaptVelocity(stage1);
         r3.Draw();
+        r3.projectileCollision();
 
         FsSwapBuffers();
         FsSleep(20);
