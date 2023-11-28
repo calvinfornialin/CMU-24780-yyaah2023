@@ -4,7 +4,7 @@
 
 const double MD_PI = 3.14159265;
 
-Projectile::Projectile() 
+Projectile::Projectile()
 {
 	cx = 0;
 	cy = 0;

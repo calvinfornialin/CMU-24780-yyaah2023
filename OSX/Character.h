@@ -5,7 +5,7 @@
 #include "Stage.h"
 
 
-enum Direction{
+enum Direction {
     right,
     left
 };
@@ -18,45 +18,37 @@ protected:
     int y;
     int vx;
     int vy;
-
-    static Direction direction;
-    static int maxMultiJump;
-    static int multiJumpCnt;
-    static const int CharacterWidth;
-    static const int CharacterHeight;
-    static const int CharacterSpeed;
-    static const int JumpSpeed;
-    static const int Gravity;
-    static const int GroundHeight;
+    Direction direction;
+    int CharacterSpeed;
+    static const int CharacterWidth = 64;
+    static const int CharacterHeight = 64;
+    static const int Gravity = 1;
+    static const int GroundHeight = (WINDOW_HEI - 64 - 1);
 
 public:
-    Character(int initialX);
+    Character(int initialX, int speed);
 
-    void Draw() const;
+    virtual void Draw() const = 0;
 
-    void MoveLeft();
+    virtual void MoveLeft() = 0;
 
-    void MoveRight();
+    virtual void MoveRight() = 0;
 
-    void Jump(Stage& stage);
+    virtual void Update(Stage &stage) = 0;
 
-    void Update(Stage& stage);
+    int adaptVelocity(Stage &stage);
 
-    void Stop();
+    bool chkPosValid(Stage &stage, int left_edge, int right_edge, int top_edge, int bottom_edge);
 
-    int adaptVelocity(Stage& stage);
+    int getX() const;
 
-    bool chkPosValid(Stage& stage, int left_edge, int right_edge, int top_edge, int bottom_edge);
+    int getY() const;
 
-    int getX(void);
+    void applyGravity();
 
-    int getY(void);
+    bool isOnTheGround(Stage &stage);
 
-    void applyGravity(void);
-
-    bool isOnTheGround(Stage& stage);
-
-    bool currentPosValid(Stage& stage);
+    bool currentPosValid(Stage &stage);
 };
 
 #endif

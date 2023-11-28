@@ -4,6 +4,7 @@
 #include "yspng.h"
 #include "png.h"
 #include "parameters.h"
+#include "Hero.h"
 #include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
@@ -14,7 +15,7 @@ int main(void) {
     FsPollDevice();
 
     initPng();
-    Character player(400);
+    Hero player(400, 15);
     Stage stage1;
     while (1) {
         FsPollDevice();

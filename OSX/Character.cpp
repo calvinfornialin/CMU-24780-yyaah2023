@@ -1,88 +1,18 @@
-#include <cstdio>
 #include "Character.h"
-#include "fssimplewindow.h"
 #include "parameters.h"
-#include "png.h"
 #include "Stage.h"
 #include <iostream>
-#include <stdio.h>
 
-const int Character::CharacterWidth = 64;
-const int Character::CharacterHeight = 64;
-const int Character::CharacterSpeed = 15;
-const int Character::JumpSpeed = 20;
-const int Character::Gravity = 1;
-const int Character::GroundHeight = (WINDOW_HEI - 64 - 1);
-int Character::maxMultiJump = 2;
-int Character::multiJumpCnt = maxMultiJump;
-Direction Character::direction = right;
-bool running = false;
-int currentFrame = 0;
-int frameCounter = 0;
-int numRunningFrames = 6;
-std::vector<pngFile> runningRight;
-std::vector<pngFile> runningLeft;
-
-Character::Character(int initialX)
-        : x(initialX), y(GroundHeight), vx(0), vy(0) {
-    runningRight.push_back(running_right_1);
-    runningRight.push_back(running_right_2);
-    runningRight.push_back(running_right_3);
-    runningRight.push_back(running_right_4);
-    runningRight.push_back(running_right_5);
-    runningRight.push_back(running_right_6);
-    runningLeft.push_back(running_left_1);
-    runningLeft.push_back(running_left_2);
-    runningLeft.push_back(running_left_3);
-    runningLeft.push_back(running_left_4);
-    runningLeft.push_back(running_left_5);
-    runningLeft.push_back(running_left_6);
+Character::Character(int initialX, int speed)
+        : x(initialX), y(GroundHeight), vx(0), vy(0), direction(Direction::right), CharacterSpeed(speed) {
 }
 
-int Character::getX() {
+int Character::getX() const {
     return x;
 }
 
-int Character::getY() {
+int Character::getY() const {
     return y;
-}
-
-void Character::Draw() const {
-    int winWid, winHei;
-    FsGetWindowSize(winWid, winHei);
-    if (direction == right) {
-        if (running) {
-            DrawPng((double)x, (double)y, runningRight[currentFrame]);
-        } else {
-            DrawPng((double) x, (double) y, enum_character_right);
-        }
-    } else if (direction == left) {
-        if (running) {
-            DrawPng((double)x, (double)y, runningLeft[currentFrame]);
-        } else {
-            DrawPng((double) x, (double) y, enum_character_left);
-        }
-    }
-
-}
-
-void Character::MoveLeft() {
-    direction = left;
-    vx = -CharacterSpeed;
-    running = true;
-}
-
-void Character::MoveRight() {
-    direction = right;
-    vx = CharacterSpeed;
-    running = true;
-}
-
-void Character::Jump(Stage &stage) {
-    if (Character::isOnTheGround(stage) || multiJumpCnt) {
-        multiJumpCnt -= 1;
-        vy = -JumpSpeed;
-    }
 }
 
 void Character::applyGravity() {
@@ -104,28 +34,6 @@ bool Character::isOnTheGround(Stage &stage) {
     }
     // std::cout << "In the Air\n";
     return false;
-}
-
-void Character::Stop() {
-    running = false;
-}
-
-void Character::Update(Stage &stage) {
-    frameCounter++;
-    if (frameCounter >= 3) {
-        frameCounter = 0;
-        currentFrame++;
-        if (currentFrame >= numRunningFrames) {
-            currentFrame = 0;
-        }
-    }
-
-    x += vx;
-    vx = 0;
-    y += vy;
-    if (Character::isOnTheGround(stage)) {
-        multiJumpCnt = maxMultiJump;
-    }
 }
 
 bool Character::currentPosValid(Stage &stage) {

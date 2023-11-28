@@ -16,6 +16,7 @@ yspng.cpp
 fssimplewindowobjc.o
 yssimplesound.cpp
 yssimplesound_macosx_objc.o
+Hero.cpp
 )
 
 # Header files
@@ -29,6 +30,7 @@ yspng.h
 yssimplesound.h
 parameters.h
 png.h
+Hero.h
 )
 
 # Add an executable target
