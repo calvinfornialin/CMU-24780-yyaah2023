@@ -3,6 +3,7 @@
 
 
 #include "Character.h"
+#include "Hero.h"
 
 class Robot : public Character {
 
@@ -15,9 +16,11 @@ public:
 
     void MoveRight() override;
 
-    void Update(Stage &stage) override;
+    void Update(Stage &stage, double dt) override;
 
     bool OnTheGround(Stage &stage, int x_pos, int y_pos);
+
+    void projectileCollision();
 
 private:
     Direction direction = Direction::right;

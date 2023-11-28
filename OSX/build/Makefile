@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.27.8/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.27.8/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.27.8/bin/cmake -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.27.8/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX
+CMAKE_SOURCE_DIR = /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build
+CMAKE_BINARY_DIR = /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.27.8/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/Cellar/cmake/3.27.8/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/usr/local/Cellar/cmake/3.27.8/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/Cellar/cmake/3.27.8/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build/CMakeFiles /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build/CMakeFiles /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -153,6 +153,30 @@ Character.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/Character.cpp.s
 .PHONY : Character.cpp.s
 
+Hero.o: Hero.cpp.o
+.PHONY : Hero.o
+
+# target to build an object file
+Hero.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/Hero.cpp.o
+.PHONY : Hero.cpp.o
+
+Hero.i: Hero.cpp.i
+.PHONY : Hero.i
+
+# target to preprocess a source file
+Hero.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/Hero.cpp.i
+.PHONY : Hero.cpp.i
+
+Hero.s: Hero.cpp.s
+.PHONY : Hero.s
+
+# target to generate assembly for a file
+Hero.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/Hero.cpp.s
+.PHONY : Hero.cpp.s
+
 Projectile.o: Projectile.cpp.o
 .PHONY : Projectile.o
 
@@ -176,6 +200,30 @@ Projectile.s: Projectile.cpp.s
 Projectile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/Projectile.cpp.s
 .PHONY : Projectile.cpp.s
+
+Robot.o: Robot.cpp.o
+.PHONY : Robot.o
+
+# target to build an object file
+Robot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/Robot.cpp.o
+.PHONY : Robot.cpp.o
+
+Robot.i: Robot.cpp.i
+.PHONY : Robot.i
+
+# target to preprocess a source file
+Robot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/Robot.cpp.i
+.PHONY : Robot.cpp.i
+
+Robot.s: Robot.cpp.s
+.PHONY : Robot.s
+
+# target to generate assembly for a file
+Robot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/Robot.cpp.s
+.PHONY : Robot.cpp.s
 
 Stage.o: Stage.cpp.o
 .PHONY : Stage.o
@@ -357,9 +405,15 @@ help:
 	@echo "... Character.o"
 	@echo "... Character.i"
 	@echo "... Character.s"
+	@echo "... Hero.o"
+	@echo "... Hero.i"
+	@echo "... Hero.s"
 	@echo "... Projectile.o"
 	@echo "... Projectile.i"
 	@echo "... Projectile.s"
+	@echo "... Robot.o"
+	@echo "... Robot.i"
+	@echo "... Robot.s"
 	@echo "... Stage.o"
 	@echo "... Stage.i"
 	@echo "... Stage.s"

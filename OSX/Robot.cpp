@@ -1,6 +1,7 @@
 #include "Robot.h"
 #include "png.h"
 #include "Character.h"
+#include "Hero.h"
 
 Robot::Robot(int initialX, int initialY, int speed) : Character(initialX, initialY, speed) {
 
@@ -24,7 +25,7 @@ void Robot::MoveRight() {
     x += CharacterSpeed;
 }
 
-void Robot::Update(Stage &stage) {
+void Robot::Update(Stage &stage, double dt) {
     int winWid, winHei;
     FsGetWindowSize(winWid, winHei);
     if (direction == right) {
@@ -59,4 +60,8 @@ bool Robot::OnTheGround(Stage &stage, int x_pos, int y_pos) {
     }
     // std::cout << "In the Air\n";
     return false;
+}
+
+void Robot::projectileCollision() {
+
 }

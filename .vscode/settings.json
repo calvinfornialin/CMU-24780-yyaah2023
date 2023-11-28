@@ -72,6 +72,13 @@
         "type_traits": "cpp",
         "utility": "cpp",
         "format": "cpp",
-        "cinttypes": "cpp"
-    }
+        "cinttypes": "cpp",
+        "__bits": "cpp",
+        "__mutex_base": "cpp",
+        "__tuple": "cpp",
+        "fstream": "cpp",
+        "__nullptr": "cpp",
+        "__string": "cpp"
+    },
+    "cmake.sourceDirectory": "/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX"
 }

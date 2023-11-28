@@ -1,5 +1,7 @@
-CMakeFiles/exe.dir/Stage.cpp.o: \
-  /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Stage.cpp \
+CMakeFiles/exe.dir/Hero.cpp.o: \
+  /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Hero.cpp \
+  /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Hero.h \
+  /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Character.h \
   /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Stage.h \
   /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/yspng.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdio.h \
@@ -742,24 +744,5 @@ CMakeFiles/exe.dir/Stage.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/fstream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/filesystem \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_status.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_type.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perms.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/path.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iomanip \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/operations.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/space_info.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/u8path.h \
-  /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/png.h \
-  /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/character.h \
-  /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Projectile.h
+  /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Projectile.h \
+  /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/png.h

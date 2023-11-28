@@ -125,3 +125,17 @@ int Character::adaptVelocity(Stage &stage) {
     }
     return 0;
 }
+
+void Character::shoot(int hei, double vx, double vy) {
+    Projectile bullet;
+    //std::cout << "\ndirection: " << direction << std::endl;
+    if (direction == left) {
+        bullet.fireProjectile(x, y - hei, vx * (-1), vy);
+    }
+        
+    else if (direction == right) {
+        bullet.fireProjectile(x + CharacterWidth, y - hei, vx, vy);
+    }
+    Projectiles.push_back(bullet);
+    
+}

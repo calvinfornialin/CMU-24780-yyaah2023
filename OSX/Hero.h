@@ -16,11 +16,13 @@ public:
 
     void MoveRight() override;
 
-    void Update(Stage &stage) override;
+    void Update(Stage &stage, double dt) override;
 
     void Stop();
 
     void Jump(Stage &stage);
+
+    void projectileCollision();
 
 private:
     int JumpSpeed = 20;

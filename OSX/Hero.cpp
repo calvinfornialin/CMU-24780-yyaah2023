@@ -33,6 +33,10 @@ void Hero::Draw() const {
             DrawPng((double) x, (double) y, enum_character_left);
         }
     }
+
+    for (Projectile projectile : Projectiles) {
+        projectile.Draw(255, 255, 255);
+    }
 }
 
 void Hero::MoveLeft() {
@@ -54,7 +58,7 @@ void Hero::Jump(Stage &stage) {
     }
 }
 
-void Hero::Update(Stage &stage) {
+void Hero::Update(Stage &stage, double dt) {
     frameCounter++;
     if (frameCounter >= 3) {
         frameCounter = 0;
@@ -69,10 +73,29 @@ void Hero::Update(Stage &stage) {
     if (Character::isOnTheGround(stage)) {
         multiJumpCnt = maxMultiJump;
     }
+    // DELETE INACTIVE PROJECTILES
+    /*
+    for (Projectile projectile : Projectiles) {
+        if (projectile.isActive() == false) {
+            Projectiles.erase(std::remove(Projectiles.begin(), Projectiles.end(), projectile), Projectiles.end()); 
+        }
+    }
+    */
+
+    // UPDATE PROJECTILES
+    for (Projectile& projectile : Projectiles) {
+        projectile.moveProjectile(dt, WINDOW_WID, WINDOW_HEI, 0, 0);
+    }
+    //std::cout << "\ndt value: " << dt << std::endl;
+    //std::cout << "\nprojectile vector size: " << Projectiles.size() << std::endl;
 }
 
 void Hero::Stop() {
     running = false;
+}
+
+void Hero::projectileCollision() {
+
 }
 
 

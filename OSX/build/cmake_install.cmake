@@ -1,4 +1,4 @@
-# Install script for directory: /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX
+# Install script for directory: /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -3,6 +3,7 @@
 #define Character_H
 
 #include "Stage.h"
+#include "Projectile.h"
 
 
 enum Direction {
@@ -24,6 +25,7 @@ protected:
     static const int CharacterHeight = 64;
     static const int Gravity = 1;
     static const int GroundHeight = (WINDOW_HEI - 64 - 1);
+    std::vector<Projectile> Projectiles;
 
 public:
     Character(int initialX, int initialY, int speed);
@@ -34,7 +36,7 @@ public:
 
     virtual void MoveRight() = 0;
 
-    virtual void Update(Stage &stage) = 0;
+    virtual void Update(Stage &stage, double dt) = 0;
 
     int adaptVelocity(Stage &stage);
 
@@ -49,6 +51,9 @@ public:
     bool isOnTheGround(Stage &stage);
 
     bool currentPosValid(Stage &stage);
+
+    void shoot(int hei, double vx, double vy);
+
 };
 
 #endif
