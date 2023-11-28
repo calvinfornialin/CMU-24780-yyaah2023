@@ -24,6 +24,8 @@ public:
 
     void projectileCollision() override;
 
+    void shoot(int hei, double vx, double vy);
+
 private:
     int JumpSpeed = 20;
     int maxMultiJump = 2;

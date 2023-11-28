@@ -1,6 +1,7 @@
 #include "Character.h"
 #include "parameters.h"
 #include "Stage.h"
+#include "Hero.h"
 #include <iostream>
 
 Character::Character(int initialX, int initialY, int speed)
@@ -126,16 +127,16 @@ int Character::adaptVelocity(Stage &stage) {
     return 0;
 }
 
-void Character::shoot(int hei, double vx, double vy) {
-    Projectile bullet;
-    //std::cout << "\ndirection: " << direction << std::endl;
-    if (direction == left) {
-        bullet.fireProjectile(x, y - hei, vx * (-1), vy);
-    }
+// void Character::shoot(Hero &hero, int hei, double vx, double vy) {
+//     Projectile bullet;
+//     //std::cout << "\ndirection: " << direction << std::endl;
+//     if (hero.getDirection() == left) {
+//         bullet.fireProjectile(x, y - hei, vx * (-1), vy);
+//     }
         
-    else if (direction == right) {
-        bullet.fireProjectile(x + CharacterWidth, y - hei, vx, vy);
-    }
-    Projectiles.push_back(bullet);
+//     else if (hero.getDirection() == right) {
+//         bullet.fireProjectile(x + CharacterWidth, y - hei, vx, vy);
+//     }
+//     Projectiles.push_back(bullet);
     
-}
+// }

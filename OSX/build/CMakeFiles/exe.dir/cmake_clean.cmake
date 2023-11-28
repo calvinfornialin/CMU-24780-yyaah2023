@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe"
-  "/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe.pdb"
+  "/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe"
+  "/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe.pdb"
   "CMakeFiles/exe.dir/Character.cpp.o"
   "CMakeFiles/exe.dir/Character.cpp.o.d"
   "CMakeFiles/exe.dir/Hero.cpp.o"

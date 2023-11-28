@@ -54,7 +54,7 @@ public:
 
     bool currentPosValid(Stage &stage);
 
-    void shoot(int hei, double vx, double vy);
+    // void shoot(Hero &hero, int hei, double vx, double vy);
 
 };
 
