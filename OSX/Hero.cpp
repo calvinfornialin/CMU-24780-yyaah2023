@@ -1,6 +1,7 @@
 #include "Hero.h"
 #include "png.h"
 #include "Character.h"
+#include "Robot.h"
 
 Hero::Hero(int initialX, int speed) : Character(initialX, GroundHeight, speed) {
     runningRight.push_back(running_right_1);
@@ -94,8 +95,23 @@ void Hero::Stop() {
     running = false;
 }
 
-void Hero::projectileCollision() {
-
+void Hero::projectileCollision(Robot& enemy) {
+    //std::cout << "\n checking hero bullet -> robot collision" << std::endl;
+    bool hit = false;
+    //only check if the enemy is still alive
+    if (enemy.isActive()) {
+        //check all projectiles for collision
+        for (Projectile& projectile : Projectiles) {
+            //only check for actice projectiles
+            if (projectile.isActive()) {
+                hit = projectile.Collision(x, y, x + enemy.CharacterWidth, y - enemy.CharacterHeight);
+            }
+            if (hit) {
+                projectile.resetProjectile(0, 0);
+                enemy.setActive(false);
+            }
+        }
+    }
 }
 
 void Hero::shoot(int hei, double vx, double vy) {

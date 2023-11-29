@@ -59,13 +59,16 @@ void Projectile::moveProjectile(double dt, int wWidth, int wHeight, int charX, i
         }
     }
 }
-void Projectile::Collision(int windowWidth, int windowHeight)
+bool Projectile::Collision(int x1, int y1, int x2, int y2)
 {
-    // idk, figure out some collision or something
+    // return true if collision occurs with bounding coordinate box
     if (active)
     {
-
+        if(cx > x1 && cx < x2 && cy < y1 && cy > y2) {
+            return true;
+        }
     }
+    return false;
 }
 void Projectile::resetProjectile(int charX, int charY)
 {

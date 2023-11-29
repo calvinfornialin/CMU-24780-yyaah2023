@@ -3,7 +3,7 @@
 
 
 #include "Character.h"
-#include "Hero.h"
+//#include "Hero.h"
 
 class Robot : public Character {
 
@@ -20,10 +20,17 @@ public:
 
     bool OnTheGround(Stage &stage, int x_pos, int y_pos);
 
-    void projectileCollision() override;
+    void projectileCollision();
+
+    void shoot(int hei, double vx, double vy) override;
+
+    void setActive(bool status);
+
+    bool isActive();
 
 private:
     Direction direction = Direction::right;
+    bool active = true;
 };
 
 

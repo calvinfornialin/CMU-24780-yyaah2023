@@ -37,8 +37,8 @@ public:
     virtual void MoveRight() = 0;
 
     virtual void Update(Stage &stage, double dt) = 0;
-    
-    virtual void projectileCollision() = 0;
+
+    virtual void shoot(int hei, double vx, double vy) = 0;
 
     int adaptVelocity(Stage &stage);
 
@@ -54,7 +54,7 @@ public:
 
     bool currentPosValid(Stage &stage);
 
-    // void shoot(Hero &hero, int hei, double vx, double vy);
+    
 
 };
 

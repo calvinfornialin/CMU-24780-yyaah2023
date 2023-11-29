@@ -74,7 +74,9 @@ int main(void) {
         player.adaptVelocity(stage1);
         player.Update(stage1, dt);
         player.Draw();
-        player.projectileCollision();
+        player.projectileCollision(r1);
+        player.projectileCollision(r2);
+        player.projectileCollision(r3);
     
 
 //        std::cout << "Current Position " << "x: " << r1.getX() << "y: " << r1.getY() << "\n";

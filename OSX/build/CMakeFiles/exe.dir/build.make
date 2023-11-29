@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.27.8/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.27.8/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.27.8/bin/cmake -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.27.8/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX
+CMAKE_SOURCE_DIR = /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build
+CMAKE_BINARY_DIR = /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/exe.dir/depend.make
@@ -70,158 +70,158 @@ include CMakeFiles/exe.dir/progress.make
 include CMakeFiles/exe.dir/flags.make
 
 CMakeFiles/exe.dir/main.cpp.o: CMakeFiles/exe.dir/flags.make
-CMakeFiles/exe.dir/main.cpp.o: /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/main.cpp
+CMakeFiles/exe.dir/main.cpp.o: /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/main.cpp
 CMakeFiles/exe.dir/main.cpp.o: CMakeFiles/exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exe.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/main.cpp.o -MF CMakeFiles/exe.dir/main.cpp.o.d -o CMakeFiles/exe.dir/main.cpp.o -c /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exe.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/main.cpp.o -MF CMakeFiles/exe.dir/main.cpp.o.d -o CMakeFiles/exe.dir/main.cpp.o -c /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/main.cpp
 
 CMakeFiles/exe.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exe.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/main.cpp > CMakeFiles/exe.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/main.cpp > CMakeFiles/exe.dir/main.cpp.i
 
 CMakeFiles/exe.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exe.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/main.cpp -o CMakeFiles/exe.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/main.cpp -o CMakeFiles/exe.dir/main.cpp.s
 
 CMakeFiles/exe.dir/png.cpp.o: CMakeFiles/exe.dir/flags.make
-CMakeFiles/exe.dir/png.cpp.o: /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/png.cpp
+CMakeFiles/exe.dir/png.cpp.o: /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/png.cpp
 CMakeFiles/exe.dir/png.cpp.o: CMakeFiles/exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exe.dir/png.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/png.cpp.o -MF CMakeFiles/exe.dir/png.cpp.o.d -o CMakeFiles/exe.dir/png.cpp.o -c /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/png.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exe.dir/png.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/png.cpp.o -MF CMakeFiles/exe.dir/png.cpp.o.d -o CMakeFiles/exe.dir/png.cpp.o -c /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/png.cpp
 
 CMakeFiles/exe.dir/png.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exe.dir/png.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/png.cpp > CMakeFiles/exe.dir/png.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/png.cpp > CMakeFiles/exe.dir/png.cpp.i
 
 CMakeFiles/exe.dir/png.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exe.dir/png.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/png.cpp -o CMakeFiles/exe.dir/png.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/png.cpp -o CMakeFiles/exe.dir/png.cpp.s
 
 CMakeFiles/exe.dir/Character.cpp.o: CMakeFiles/exe.dir/flags.make
-CMakeFiles/exe.dir/Character.cpp.o: /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Character.cpp
+CMakeFiles/exe.dir/Character.cpp.o: /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Character.cpp
 CMakeFiles/exe.dir/Character.cpp.o: CMakeFiles/exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exe.dir/Character.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/Character.cpp.o -MF CMakeFiles/exe.dir/Character.cpp.o.d -o CMakeFiles/exe.dir/Character.cpp.o -c /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Character.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exe.dir/Character.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/Character.cpp.o -MF CMakeFiles/exe.dir/Character.cpp.o.d -o CMakeFiles/exe.dir/Character.cpp.o -c /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Character.cpp
 
 CMakeFiles/exe.dir/Character.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exe.dir/Character.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Character.cpp > CMakeFiles/exe.dir/Character.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Character.cpp > CMakeFiles/exe.dir/Character.cpp.i
 
 CMakeFiles/exe.dir/Character.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exe.dir/Character.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Character.cpp -o CMakeFiles/exe.dir/Character.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Character.cpp -o CMakeFiles/exe.dir/Character.cpp.s
 
 CMakeFiles/exe.dir/Projectile.cpp.o: CMakeFiles/exe.dir/flags.make
-CMakeFiles/exe.dir/Projectile.cpp.o: /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Projectile.cpp
+CMakeFiles/exe.dir/Projectile.cpp.o: /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Projectile.cpp
 CMakeFiles/exe.dir/Projectile.cpp.o: CMakeFiles/exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/exe.dir/Projectile.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/Projectile.cpp.o -MF CMakeFiles/exe.dir/Projectile.cpp.o.d -o CMakeFiles/exe.dir/Projectile.cpp.o -c /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Projectile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/exe.dir/Projectile.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/Projectile.cpp.o -MF CMakeFiles/exe.dir/Projectile.cpp.o.d -o CMakeFiles/exe.dir/Projectile.cpp.o -c /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Projectile.cpp
 
 CMakeFiles/exe.dir/Projectile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exe.dir/Projectile.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Projectile.cpp > CMakeFiles/exe.dir/Projectile.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Projectile.cpp > CMakeFiles/exe.dir/Projectile.cpp.i
 
 CMakeFiles/exe.dir/Projectile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exe.dir/Projectile.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Projectile.cpp -o CMakeFiles/exe.dir/Projectile.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Projectile.cpp -o CMakeFiles/exe.dir/Projectile.cpp.s
 
 CMakeFiles/exe.dir/Stage.cpp.o: CMakeFiles/exe.dir/flags.make
-CMakeFiles/exe.dir/Stage.cpp.o: /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Stage.cpp
+CMakeFiles/exe.dir/Stage.cpp.o: /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Stage.cpp
 CMakeFiles/exe.dir/Stage.cpp.o: CMakeFiles/exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/exe.dir/Stage.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/Stage.cpp.o -MF CMakeFiles/exe.dir/Stage.cpp.o.d -o CMakeFiles/exe.dir/Stage.cpp.o -c /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Stage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/exe.dir/Stage.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/Stage.cpp.o -MF CMakeFiles/exe.dir/Stage.cpp.o.d -o CMakeFiles/exe.dir/Stage.cpp.o -c /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Stage.cpp
 
 CMakeFiles/exe.dir/Stage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exe.dir/Stage.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Stage.cpp > CMakeFiles/exe.dir/Stage.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Stage.cpp > CMakeFiles/exe.dir/Stage.cpp.i
 
 CMakeFiles/exe.dir/Stage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exe.dir/Stage.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Stage.cpp -o CMakeFiles/exe.dir/Stage.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Stage.cpp -o CMakeFiles/exe.dir/Stage.cpp.s
 
 CMakeFiles/exe.dir/fssimplewindowcpp.cpp.o: CMakeFiles/exe.dir/flags.make
-CMakeFiles/exe.dir/fssimplewindowcpp.cpp.o: /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/fssimplewindowcpp.cpp
+CMakeFiles/exe.dir/fssimplewindowcpp.cpp.o: /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/fssimplewindowcpp.cpp
 CMakeFiles/exe.dir/fssimplewindowcpp.cpp.o: CMakeFiles/exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/exe.dir/fssimplewindowcpp.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/fssimplewindowcpp.cpp.o -MF CMakeFiles/exe.dir/fssimplewindowcpp.cpp.o.d -o CMakeFiles/exe.dir/fssimplewindowcpp.cpp.o -c /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/fssimplewindowcpp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/exe.dir/fssimplewindowcpp.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/fssimplewindowcpp.cpp.o -MF CMakeFiles/exe.dir/fssimplewindowcpp.cpp.o.d -o CMakeFiles/exe.dir/fssimplewindowcpp.cpp.o -c /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/fssimplewindowcpp.cpp
 
 CMakeFiles/exe.dir/fssimplewindowcpp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exe.dir/fssimplewindowcpp.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/fssimplewindowcpp.cpp > CMakeFiles/exe.dir/fssimplewindowcpp.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/fssimplewindowcpp.cpp > CMakeFiles/exe.dir/fssimplewindowcpp.cpp.i
 
 CMakeFiles/exe.dir/fssimplewindowcpp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exe.dir/fssimplewindowcpp.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/fssimplewindowcpp.cpp -o CMakeFiles/exe.dir/fssimplewindowcpp.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/fssimplewindowcpp.cpp -o CMakeFiles/exe.dir/fssimplewindowcpp.cpp.s
 
 CMakeFiles/exe.dir/ysglfontdata.c.o: CMakeFiles/exe.dir/flags.make
-CMakeFiles/exe.dir/ysglfontdata.c.o: /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/ysglfontdata.c
+CMakeFiles/exe.dir/ysglfontdata.c.o: /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/ysglfontdata.c
 CMakeFiles/exe.dir/ysglfontdata.c.o: CMakeFiles/exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/exe.dir/ysglfontdata.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/exe.dir/ysglfontdata.c.o -MF CMakeFiles/exe.dir/ysglfontdata.c.o.d -o CMakeFiles/exe.dir/ysglfontdata.c.o -c /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/ysglfontdata.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/exe.dir/ysglfontdata.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/exe.dir/ysglfontdata.c.o -MF CMakeFiles/exe.dir/ysglfontdata.c.o.d -o CMakeFiles/exe.dir/ysglfontdata.c.o -c /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/ysglfontdata.c
 
 CMakeFiles/exe.dir/ysglfontdata.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/exe.dir/ysglfontdata.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/ysglfontdata.c > CMakeFiles/exe.dir/ysglfontdata.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/ysglfontdata.c > CMakeFiles/exe.dir/ysglfontdata.c.i
 
 CMakeFiles/exe.dir/ysglfontdata.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/exe.dir/ysglfontdata.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/ysglfontdata.c -o CMakeFiles/exe.dir/ysglfontdata.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/ysglfontdata.c -o CMakeFiles/exe.dir/ysglfontdata.c.s
 
 CMakeFiles/exe.dir/yspng.cpp.o: CMakeFiles/exe.dir/flags.make
-CMakeFiles/exe.dir/yspng.cpp.o: /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/yspng.cpp
+CMakeFiles/exe.dir/yspng.cpp.o: /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/yspng.cpp
 CMakeFiles/exe.dir/yspng.cpp.o: CMakeFiles/exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/exe.dir/yspng.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/yspng.cpp.o -MF CMakeFiles/exe.dir/yspng.cpp.o.d -o CMakeFiles/exe.dir/yspng.cpp.o -c /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/yspng.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/exe.dir/yspng.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/yspng.cpp.o -MF CMakeFiles/exe.dir/yspng.cpp.o.d -o CMakeFiles/exe.dir/yspng.cpp.o -c /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/yspng.cpp
 
 CMakeFiles/exe.dir/yspng.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exe.dir/yspng.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/yspng.cpp > CMakeFiles/exe.dir/yspng.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/yspng.cpp > CMakeFiles/exe.dir/yspng.cpp.i
 
 CMakeFiles/exe.dir/yspng.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exe.dir/yspng.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/yspng.cpp -o CMakeFiles/exe.dir/yspng.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/yspng.cpp -o CMakeFiles/exe.dir/yspng.cpp.s
 
 CMakeFiles/exe.dir/yssimplesound.cpp.o: CMakeFiles/exe.dir/flags.make
-CMakeFiles/exe.dir/yssimplesound.cpp.o: /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/yssimplesound.cpp
+CMakeFiles/exe.dir/yssimplesound.cpp.o: /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/yssimplesound.cpp
 CMakeFiles/exe.dir/yssimplesound.cpp.o: CMakeFiles/exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/exe.dir/yssimplesound.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/yssimplesound.cpp.o -MF CMakeFiles/exe.dir/yssimplesound.cpp.o.d -o CMakeFiles/exe.dir/yssimplesound.cpp.o -c /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/yssimplesound.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/exe.dir/yssimplesound.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/yssimplesound.cpp.o -MF CMakeFiles/exe.dir/yssimplesound.cpp.o.d -o CMakeFiles/exe.dir/yssimplesound.cpp.o -c /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/yssimplesound.cpp
 
 CMakeFiles/exe.dir/yssimplesound.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exe.dir/yssimplesound.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/yssimplesound.cpp > CMakeFiles/exe.dir/yssimplesound.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/yssimplesound.cpp > CMakeFiles/exe.dir/yssimplesound.cpp.i
 
 CMakeFiles/exe.dir/yssimplesound.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exe.dir/yssimplesound.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/yssimplesound.cpp -o CMakeFiles/exe.dir/yssimplesound.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/yssimplesound.cpp -o CMakeFiles/exe.dir/yssimplesound.cpp.s
 
 CMakeFiles/exe.dir/Hero.cpp.o: CMakeFiles/exe.dir/flags.make
-CMakeFiles/exe.dir/Hero.cpp.o: /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Hero.cpp
+CMakeFiles/exe.dir/Hero.cpp.o: /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Hero.cpp
 CMakeFiles/exe.dir/Hero.cpp.o: CMakeFiles/exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/exe.dir/Hero.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/Hero.cpp.o -MF CMakeFiles/exe.dir/Hero.cpp.o.d -o CMakeFiles/exe.dir/Hero.cpp.o -c /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Hero.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/exe.dir/Hero.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/Hero.cpp.o -MF CMakeFiles/exe.dir/Hero.cpp.o.d -o CMakeFiles/exe.dir/Hero.cpp.o -c /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Hero.cpp
 
 CMakeFiles/exe.dir/Hero.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exe.dir/Hero.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Hero.cpp > CMakeFiles/exe.dir/Hero.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Hero.cpp > CMakeFiles/exe.dir/Hero.cpp.i
 
 CMakeFiles/exe.dir/Hero.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exe.dir/Hero.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Hero.cpp -o CMakeFiles/exe.dir/Hero.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Hero.cpp -o CMakeFiles/exe.dir/Hero.cpp.s
 
 CMakeFiles/exe.dir/Robot.cpp.o: CMakeFiles/exe.dir/flags.make
-CMakeFiles/exe.dir/Robot.cpp.o: /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Robot.cpp
+CMakeFiles/exe.dir/Robot.cpp.o: /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Robot.cpp
 CMakeFiles/exe.dir/Robot.cpp.o: CMakeFiles/exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/exe.dir/Robot.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/Robot.cpp.o -MF CMakeFiles/exe.dir/Robot.cpp.o.d -o CMakeFiles/exe.dir/Robot.cpp.o -c /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Robot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/exe.dir/Robot.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exe.dir/Robot.cpp.o -MF CMakeFiles/exe.dir/Robot.cpp.o.d -o CMakeFiles/exe.dir/Robot.cpp.o -c /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Robot.cpp
 
 CMakeFiles/exe.dir/Robot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exe.dir/Robot.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Robot.cpp > CMakeFiles/exe.dir/Robot.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Robot.cpp > CMakeFiles/exe.dir/Robot.cpp.i
 
 CMakeFiles/exe.dir/Robot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exe.dir/Robot.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/Robot.cpp -o CMakeFiles/exe.dir/Robot.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/Robot.cpp -o CMakeFiles/exe.dir/Robot.cpp.s
 
 # Object files for target exe
 exe_OBJECTS = \
@@ -239,29 +239,29 @@ exe_OBJECTS = \
 
 # External object files for target exe
 exe_EXTERNAL_OBJECTS = \
-"/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/fssimplewindowobjc.o" \
-"/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/yssimplesound_macosx_objc.o"
+"/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/fssimplewindowobjc.o" \
+"/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/yssimplesound_macosx_objc.o"
 
-/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/main.cpp.o
-/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/png.cpp.o
-/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/Character.cpp.o
-/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/Projectile.cpp.o
-/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/Stage.cpp.o
-/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/fssimplewindowcpp.cpp.o
-/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/ysglfontdata.c.o
-/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/yspng.cpp.o
-/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/yssimplesound.cpp.o
-/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/Hero.cpp.o
-/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/Robot.cpp.o
-/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/fssimplewindowobjc.o
-/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/yssimplesound_macosx_objc.o
-/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/build.make
-/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe"
+/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/main.cpp.o
+/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/png.cpp.o
+/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/Character.cpp.o
+/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/Projectile.cpp.o
+/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/Stage.cpp.o
+/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/fssimplewindowcpp.cpp.o
+/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/ysglfontdata.c.o
+/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/yspng.cpp.o
+/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/yssimplesound.cpp.o
+/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/Hero.cpp.o
+/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/Robot.cpp.o
+/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/fssimplewindowobjc.o
+/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/yssimplesound_macosx_objc.o
+/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/build.make
+/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe: CMakeFiles/exe.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/exe.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/exe.dir/build: /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe
+CMakeFiles/exe.dir/build: /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/test.app/Contents/MacOS/exe
 .PHONY : CMakeFiles/exe.dir/build
 
 CMakeFiles/exe.dir/clean:
@@ -269,6 +269,6 @@ CMakeFiles/exe.dir/clean:
 .PHONY : CMakeFiles/exe.dir/clean
 
 CMakeFiles/exe.dir/depend:
-	cd /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build /Users/hanjohn/Desktop/24780/CMU-24780-yyaah2023/OSX/build/CMakeFiles/exe.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build /Users/aaronkuo/Documents/GitHub/CMU-24780-yyaah2023/OSX/build/CMakeFiles/exe.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/exe.dir/depend
 

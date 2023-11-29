@@ -1,7 +1,7 @@
 #include "Robot.h"
 #include "png.h"
 #include "Character.h"
-#include "Hero.h"
+//#include "Hero.h"
 
 Robot::Robot(int initialX, int initialY, int speed) : Character(initialX, initialY, speed) {
 
@@ -10,10 +10,12 @@ Robot::Robot(int initialX, int initialY, int speed) : Character(initialX, initia
 void Robot::Draw() const {
     int winWid, winHei;
     FsGetWindowSize(winWid, winHei);
-    if (direction == right) {
-        DrawPng((double)x, (double)y, robot_right);
-    } else {
-        DrawPng((double)x, (double)y, robot_left);
+    if (active) {
+        if (direction == right) {
+            DrawPng((double)x, (double)y, robot_right);
+        } else {
+            DrawPng((double)x, (double)y, robot_left);
+        }
     }
 }
 
@@ -64,4 +66,16 @@ bool Robot::OnTheGround(Stage &stage, int x_pos, int y_pos) {
 
 void Robot::projectileCollision() {
 
+}
+
+void Robot::shoot(int hei, double vx, double vy) {
+
+}
+
+void Robot::setActive(bool status) {
+    active = status;
+}
+
+bool Robot::isActive() {
+    return active;
 }

@@ -12,7 +12,7 @@ public:
 	Projectile();
 	void Draw(int r, int g, int b);
 	void moveProjectile(double dt, int wWidth, int wHeight, int charX, int charY);
-	void Collision(int windowWidth, int windowHeight);
+	bool Collision(int x1, int y1, int x2, int y2);
 	void resetProjectile(int charX, int charY);
 	void fireProjectile(int charX, int charY, double v_x, double v_y);
 	bool isActive();

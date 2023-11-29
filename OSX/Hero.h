@@ -4,6 +4,7 @@
 #define Hero_H
 
 #include "Character.h"
+#include "Robot.h"
 #include "png.h"
 
 class Hero : public Character {
@@ -22,9 +23,9 @@ public:
 
     void Jump(Stage &stage);
 
-    void projectileCollision() override;
+    void projectileCollision(Robot& enemy);
 
-    void shoot(int hei, double vx, double vy);
+    void shoot(int hei, double vx, double vy) override;
 
 private:
     int JumpSpeed = 20;
