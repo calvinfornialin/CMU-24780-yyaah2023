@@ -5,3 +5,5 @@
 $> cd OSX
 
 $> ./build_and_run.sh
+
+~~Coco has left the chat~~
